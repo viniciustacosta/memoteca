@@ -49,11 +49,30 @@ h2 {
   border: 2px solid #154580;
   border-radius: 10px;
   transition: 0.5s ease;
+  cursor: pointer;
 }
 
 .botao:hover {
-  border: 2px solid #84eec1;
-  color: #84eec1;
+  border: 2px solid #a0b3cc;
+  color: #a0b3cc;
+}
+
+.botao-cancelar {
+  background: #801515;
+  color: #ffffff;
+  max-width: 270px;
+  width: 250px;
+  padding: 1rem;
+  margin: 0 auto;
+  border: 2px solid #801515;
+  border-radius: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.botao-cancelar:hover {
+  border: 2px solid #cca0a0;
+  color: #cca0a0;
 }
 
 @media (min-width: 576px) {

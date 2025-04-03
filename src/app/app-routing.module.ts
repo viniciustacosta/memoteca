@@ -5,9 +5,9 @@ import { ListarPensamentoComponent } from './componentes/pensamentos/listar-pens
 
 const routes: Routes = [
   {
-    pathMatch: 'full',
     path: '',
-    redirectTo: 'listarPensamento'
+    redirectTo: 'listarPensamento',
+    pathMatch: 'full'
   },
   {
     path: 'criarPensamento',
