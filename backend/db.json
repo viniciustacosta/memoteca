@@ -3,26 +3,16 @@
     {
       "id": 1,
       "conteudo": "Aprendendo ",
-      "autoria": "Dev",
-      "modelo": "modelo1"
+      "autoria": "twews43",
+      "modelo": "modelo1",
+      "favorito": false
     },
     {
       "id": 2,
-      "conteudo": "testeasdfa dfa dfasdfa fasdfas dfas fasdf adfefe afsdfeqwerasf",
-      "autoria": "DevAngular",
-      "modelo": "modelo2"
-    },
-    {
-      "id": 3,
-      "conteudo": "Aprendendo Angularafdasdfa",
+      "conteudo": "Aprendendo 2",
       "autoria": "Dev1",
-      "modelo": "modelo3"
-    },
-    {
-      "id": 4,
-      "conteudo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis quis ante vel scelerisque. Nam nec sodales ligula. Nulla facilisi. Curabitur ultrices justo eu efficitur luctus. Sed viverra, libero ac pharetra luctus, quam libero semper ante, vel varius odio nunc at ipsum. Vivamus congue lectus augue, id accumsan dui interdum ac. Etiam nec varius ante. Maecenas tincidunt purus massa, a aliquet mi vestibulum sit amet. Aliquam vitae purus vitae est pulvinar laoreet.  Etiam sodales interdum ultricies. Nam commodo rutrum viverra. Donec efficitur quis nunc nec tempus. Aliquam erat volutpat. Nunc non mi mauris. Cras varius lorem non purus lobortis tincidunt. Morbi id velit eget lacus vulputate pharetra. Quisque nisl mauris, elementum sit amet vulputate non, commodo id lorem. Nam viverra felis nisl, et dictum leo ullamcorper at. Integer a tincidunt massa. Aenean et cursus urna. Suspendisse id elementum ante, at egestas lectus. Curabitur molestie est vel dolor pulvinar, in dignissim tortor tempus. Aenean nec d",
-      "autoria": "DevAngular",
-      "modelo": "modelo3"
+      "modelo": "modelo3",
+      "favorito": false
     }
   ]
 }

@@ -13,7 +13,7 @@ export class PensamentoService {
 
   listar(pagina: number, filtro: string): Observable<Pensamento[]> {
     const itensPorPagina = 3;
-    
+
     let params = new HttpParams().set("_page", pagina).set("_limit", itensPorPagina)
 
     if (filtro.trim().length > 3) {
@@ -33,6 +33,11 @@ export class PensamentoService {
     return this.http.put<Pensamento>(url, pensamento)
   }
 
+  favoritar(pensamento: Pensamento): Observable<Pensamento> {
+    pensamento.favorito = !pensamento.favorito
+    return this.editar(pensamento)
+  }
+
   excluir(id: number): Observable<Pensamento> {
     const url = `${this.API}/${id}`
     return this.http.delete<Pensamento>(url)
@@ -42,6 +47,8 @@ export class PensamentoService {
     const url = `${this.API}/${id}`
     return this.http.get<Pensamento>(url)
   }
+
+
 
 
 }

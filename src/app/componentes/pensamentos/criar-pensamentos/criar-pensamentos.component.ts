@@ -35,6 +35,7 @@ export class CriarPensamentosComponent implements OnInit {
         Validators.minLength(3)
       ]],
       modelo: ['', Validators.required],
+      favorito: [false]
     });
 
     const id = this.route.snapshot.paramMap.get('id');
