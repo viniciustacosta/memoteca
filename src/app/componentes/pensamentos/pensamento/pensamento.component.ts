@@ -31,6 +31,8 @@ export class PensamentoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  @Input() listaFavoritos: Pensamento[] = []
+
   larguraPensamento(): string {
     if (this.pensamento.conteudo.length >= 256) {
       return 'pensamento-g'
@@ -47,8 +49,12 @@ export class PensamentoComponent implements OnInit {
   }
 
   favoritar() {
-    this.service.favoritar(this.pensamento).subscribe();
-    alert("Pensamento favoritado!")
+    this.service.favoritar(this.pensamento).subscribe(
+      () => {
+        this.listaFavoritos.splice(this.listaFavoritos.indexOf(this.pensamento), 1)
+      }
+    );
+    // alert("Pensamento favoritado!")
   }
 
 
