@@ -11,6 +11,12 @@
         </div>
     </div>
 
+    <app-botao-carregar-mais [haMaisPensamentos]="haMaisPensamentos"
+    (click) = "carregarMaisPensamentos()"
+    >
+
+    </app-botao-carregar-mais>
+
     <ng-template #SemPensamentos>
         <div class="sem-pensamento ff-inter">
             <h2>Ainda não há pensamentos cadastrados</h2>
