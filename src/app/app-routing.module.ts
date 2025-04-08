@@ -21,7 +21,7 @@ const routes: Routes = [
   },
   {
     path: 'pensamentos/editarPensamento/:id',
-    component: EditarPensamentoComponent
+    component: CriarPensamentosComponent
   },
   {
     path: 'pensamentos/excluirPensamento/:id',

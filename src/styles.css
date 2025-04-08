@@ -8,6 +8,7 @@
 .ff-inter {
   font-family: "Inter", sans-serif;
 }
+
 .ff-roboto-mono {
   font-family: "Roboto Mono", monospace;
 }
@@ -80,20 +81,35 @@ h2 {
     width: 540px;
   }
 }
+
 @media (min-width: 768px) {
   .container {
     width: 720px;
   }
 }
+
 @media (min-width: 992px) {
   .container {
     width: 960px;
   }
 }
+
 @media (min-width: 1200px) {
   .container {
     width: 1140px;
   }
+}
+
+.botao__desabilitado {
+  background: #7A7F87;
+  color: #FFFFFF;
+  max-width: 270px;
+  width: 250px;
+  padding: 1rem;
+  margin: 0 auto;
+  border: 2px solid #C4C4C4;
+  border-radius: 10px;
+  transition: 0.5s ease;
 }
 
 /* You can add global styles to this file, and also import other style files */

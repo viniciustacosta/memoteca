@@ -11,12 +11,23 @@
         <input type="textarea" class="input" formControlName="conteudo" id="pensamento"
             placeholder="Digite o pensamento">
 
-
+        <div class="mensagem__erro" *ngIf="formulario.get('conteudo')?.errors && formulario.get('conteudo')?.touched">
+            Pensamento é obrigatorio!
+        </div>
 
         <label for="autoria">
             Autoria ou fonte
         </label>
         <input type="text" class="input" formControlName="autoria" id="autoria" placeholder="Digite a autoria ou fonte">
+
+        <div class="mensagem__erro"
+            *ngIf="formulario.get('autoria')?.errors?.['required'] && formulario.get('autoria')?.touched">
+            Autoria é obrigatoria!
+        </div>
+        <div class="mensagem__erro"
+            *ngIf="formulario.get('autoria')?.errors?.['minlength'] && formulario.get('autoria')?.touched">
+            Autoria precisa de no mínimo 3 caracteres!
+        </div>
 
         <label for="modelo">Selecione o modelo do card:</label>
 
@@ -66,9 +77,16 @@
                     <p class="autoria"><b>{{formulario.get('autoria')?.value}}</b></p>
                 </div>
             </div>
+            <div class="mensagem__erro"
+                *ngIf="formulario.get('modelo')?.errors?.['required'] && formulario.get('modelo')?.touched">
+                É necessário selecionar um modelo!
+            </div>
         </div>
         <div class="acoes">
-            <button type="submit" (click)="criarPensamento()" class="botao botao-salvar">Salvar</button>
+            <button [disabled]="!formulario.valid" [ngClass]="habilitarBotao()" type="submit"
+                (click)="criarPensamento()" class="botao botao-salvar">
+                Salvar
+            </button>
             <button type="button" (click)="cancelar()" class="botao botao-cancelar">Cancelar</button>
         </div>
     </form>
